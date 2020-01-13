@@ -12,10 +12,9 @@ var app = express();
 console.log('Hello World!');
 
 /** 2) A first working Express Server */
-function(req, res){
-    res.send('Response String');
-}
-app.get("Hello express");
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+app.get('/', (req, res) => res.send('Hello World!'))
 
 /** 3) Serve an HTML file */
 
