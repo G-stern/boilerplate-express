@@ -9,12 +9,12 @@ var app = express();
 
 
 /** 1) Meet the node console. */
-console.log('Hello World!');
+//console.log('Hello World!');
 
 /** 2) A first working Express Server */
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', function (req, res) {
+    res.send('Hello Express');
+})
 
 /** 3) Serve an HTML file */
 
